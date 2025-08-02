@@ -1,2 +1,2 @@
- 1st year student from IT KMITL (LAP)
+1st year student from IT KMITL (LAP)
 EtcallgameZ property only
