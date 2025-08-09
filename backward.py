@@ -8,7 +8,6 @@ def main():
             break
         result.append(x)
 
-
     result = result[::-1]
 
     for i in result:
