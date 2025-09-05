@@ -1,13 +1,14 @@
 """100meters"""
 def main():
     """input"""
-    number = 1
     result = ""
-    for i in range(1,9):
-        x = float(input())
-        first = x
-        second = x
-        thrid = x
+    x = float(input())
+    first = x
+    for i in range(8):
+        y = float(input())
+        number = y
+        second = y
+        thrid = y
         if number < first:
             number = first
             result += str(i) + "\n"
