@@ -2,7 +2,6 @@
 def main():
     """input"""
     n = int(input())
-    century = ""
     for _ in range(n):
         x = input()
         if  x.startswith("B.E.") or x.startswith("A.D."):
@@ -11,23 +10,21 @@ def main():
             if type_year == "B.E.":
                 convert_year = int(year) - 543
                 if not convert_year%100 and convert_year >= 0:
-                    century += str(convert_year // 100) + "\n"
+                    print(convert_year // 100)
                 elif convert_year % 100 > 0 and convert_year >= 0:
-                    century += str(convert_year // 100 + 1) + "\n"
+                    print(convert_year // 100 + 1)
                 else:
-                    century += "ERROR"
+                    print("ERROR")
 
             else:
                 convert_year = int(year)
                 if not convert_year%100 and convert_year >= 0:
-                    century += str(convert_year // 100) + "\n"
+                    print(convert_year // 100)
                 elif convert_year % 100 > 0 and convert_year >= 0:
-                    century += str(convert_year // 100 + 1) + "\n"
+                    print(convert_year // 100 + 1)
                 else:
-                    century += "ERROR"
+                    print("ERROR")
         else:
-            century += "ERROR\n"
-
-    print(century,end="")
+            print("ERROR")
 
 main()
