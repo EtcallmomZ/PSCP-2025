@@ -4,15 +4,12 @@ def main():
     summary = float(input())
     max_score = float(input())
 
-    two_person_score = summary - max_score
-    min_score = max(0,two_person_score - 10)
-
-
-
+    two_person_score = summary - (max_score*2)
+    min_score = max(0,two_person_score)
 
     if (max_score-min_score) > 2:
         print("Surprising")
-    else: 
+    else:
         print("Not surprising")
 
 main()
