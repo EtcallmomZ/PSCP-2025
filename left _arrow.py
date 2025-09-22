@@ -3,17 +3,12 @@ def main():
     """input"""
     k = int(input())
     n = int(input())
-    result = ""
 
-    for i in range(n):
-        result += " " * (n-i)
-        for j in range(1,k+1):
-            if j == k:
-                result += "*" + "\n"
-            else:
-                result += "*"
+    mid = (n + 1) // 2
 
-    print(result,end="")
-
+    for i in range(1, n + 1):
+        num_spaces = abs(i - mid)
+        num_stars = k
+        print(" " * num_spaces + "*" * num_stars)
 
 main()
