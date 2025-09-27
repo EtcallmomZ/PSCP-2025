@@ -1,3 +1,1 @@
-from time import time
-day = time()
-print(day)
+print(len("Hello world"))
