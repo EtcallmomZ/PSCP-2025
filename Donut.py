@@ -1,5 +1,4 @@
 """Donut"""
-import math
 def main():
     """input"""
     a = int(input())
@@ -7,10 +6,17 @@ def main():
     c = int(input())
     d = int(input())
 
-    pro = math.ceil(d/(b+c))
-    cost = pro*b*a
-    donut = pro*(b+c)
-    print(cost,donut)
+    if not c:
+        print(a*d)
+    elif not d:
+        print(0,0)
+
+    else:
+        pro = d//b
+        price = d - pro
+        donut = (pro*c) + price
+        result = price*a
+        print(result,donut)
 
 
 main()
