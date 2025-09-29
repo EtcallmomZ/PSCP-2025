@@ -1,20 +1,13 @@
-"""sequence 8"""
-def main():
+""" sequence 8 """
+def print_simple_triangle(rows):
     """input"""
-    n = int(input())
-    count = 0
-    result = ""
-    for i in range(n):
-        i = 1
-        count += 1
-        result += " " * (n-count)
-        for j in range(i,count+1):
-            if j == count:
-                result += f"0{j}" + "\n"
-            else:
-                result += f"0{j}" + " "
+    for i in range(1, rows + 1):
+        leading_spaces = "   " * (rows - i)
 
-    print(result,end = "")
+        line_parts = [f"{j:02d}" for j in range(1, i + 1)]
+        line_content = " ".join(line_parts)
+
+        print(leading_spaces + line_content)
 
 
-main()
+print_simple_triangle(int(input()))
