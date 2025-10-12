@@ -1,0 +1,11 @@
+""" restaurant """
+def discount():
+    """ input """
+    a = float(input())
+    b = float(input())
+    c = float(input())
+    d = float(input())
+
+    
+
+discount()
