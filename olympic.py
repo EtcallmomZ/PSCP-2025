@@ -14,7 +14,7 @@ def olympic():
             "total": int(info[1])+int(info[2]) + int(info[3]) 
         })
 
-    result = sorted(t_1, key = lambda x: (-x["gold"],-x["silver"],-x["bronze"],x["country"]) )
+    result = sorted(t_1, key = lambda x: (-x["gold"],-x["silver"],-x["bronze"],x["country"]))
     previous = (None,None,None)
     for i,j in enumerate(result,start=1):
         current = (j["gold"],j["silver"],j["bronze"])
